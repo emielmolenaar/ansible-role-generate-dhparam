@@ -1,0 +1,5 @@
+---
+
+openssl_dh_param_location: /etc/ssl/certs/dhparam.pem
+openssl_dh_param_modulus: 2048
+openssl_dh_param_extra_options: "-dsaparam"

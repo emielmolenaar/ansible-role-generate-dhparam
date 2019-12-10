@@ -1,0 +1,15 @@
+---
+
+galaxy_info:
+  role_name: ansible-role-generate-dhparam
+  author: Emiel Molenaar
+  description: An Ansible role that generates DH parameters for use with f.e. nginx
+  issue_tracker_url: https://github.com/emielmolenaar/ansible-role-generate-dhparam/issues
+  license: "license (BSD, MIT)"
+  min_ansible_version: 2.9
+  galaxy_tags:
+    - openssl
+    - dhparam
+    - nginx
+    - ssl
+  dependencies: []

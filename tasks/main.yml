@@ -1,0 +1,9 @@
+---
+
+- name: Stat the DHE parameter file
+  stat: path="{{ openssl_dh_param_location }}"
+  register: dh_param
+
+- name: Generate the DHE parameter file (might take a while)
+  command: "openssl dhparam {{ openssl_dh_param_extra_options }} -out {{ openssl_dh_param_location  }} {{ openssl_dh_param_modulus }}"
+  when: dh_param.stat.exists == False
